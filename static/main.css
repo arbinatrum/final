@@ -1,0 +1,51 @@
+.body {
+    background: url(img/main.svg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100% 100%;
+   }
+.pop {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5em;
+  color: #e0d4b4;
+}
+.pop-one {
+  font-family: 'Tenor Sans', serif;
+  font-size: 2.5em;
+  color: #000000;
+}
+.pop-three {
+  font-family: 'Tenor Sans', serif;
+  font-size: 1em;
+  color: #000000;
+}
+.pop-sm {
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  color: #e0d4b4;
+}
+.pop-center
+{
+  font-family: 'Tenor Sans', serif;
+  font-size: 1.5em;
+  background-color: #f7f2f2;
+  color: #000000;
+
+}
+.pop-two
+{
+ font-family: 'Tenor Sans', serif;
+  font-size: 1.5em;
+  color: #23272e;
+}
+img{
+max-width:100%;
+height:auto;
+}
+.pop-down{
+ font-family: 'Tenor Sans', serif;
+  font-size: 1em;
+  background-color: #f7f2f2;
+  color: #000000;
+}

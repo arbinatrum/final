@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link href="static/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Teko:wght@300&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Cinzel:wght@500&family=Cuprum&family=Teko:wght@300&family=Tenor+Sans&display=swap"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="height: 100%;">
+<div class="modal" id="modal_notification" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>На вашу почту отправлена ссылка.</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    {% if flag %}
+    $('#modal_notification').modal('show')
+    {% endif %}
+
+</script>
+<div class="container">
+    <div class="container mt-4">
+        <a href="#about-block" class="btn btn-light ">О проекте</a>
+        <a href="#tariff-block" class="btn btn-light">Тарифы</a>
+        <a href="#pay-block" type="button" class="float-right btn btn-dark">Отправить заявку</a>
+    </div>
+    <div class="container-fluid d-flex body mt-2" style="height: 200px;">
+        <div class="justify-content-center mx-auto align-self-center mb-4">
+            <p class="pop">Start, improve</p>
+            <p class="pop-sm">business school</p>
+        </div>
+    </div>
+    <p class="text-center pop-center mt-4 shadow-sm p-3 mb-5 rounded">Хотите начать работать на себя? Реализовать себя в
+        какой либо сфере, и создать собственное предприятия?
+        Данный курс поможет понять основы предпринимательства, затронет основные ошибки новичков при старте а также
+        скорректирует правильный курс развития.
+    </p>
+    <div class="container d-flex mt-4 ">
+        <div class="container">
+            <img src="static/img/2.svg">
+            <p class="text-center pop-two mt-4">На примере ресторанного бизнеса мы разберем основные бизнес процессы и
+                покажем основные подводные камни</p>
+        </div>
+        <div class="container ">
+            <p class="text-center pop-two mt-4">Все уроки уже записаны в формате видео, однако в любой момент вы сможете
+                связаться с куратором через телеграм чат.
+                Помимо этого в конце курса вы самостоятельно разработаете модель бизнеса в интересующей вас категории.
+            </p>
+            <img src="static/img/3.svg">
+        </div>
+        <div class="container">
+            <img src="static/img/1.svg">
+            <p class="text-center pop-two mt-4">Все наши кураторы имею собственные предприятия и смогут на практическом
+                опыте показать реальные проблемы бизнеса. </p>
+        </div>
+    </div>
+    <p class="text-center pop-one mt-4 ">Чему вы научитесь на курсе?</p>
+    <p class="text-center pop-three mb-5">Основано на опыте 4 000+ учеников школы:</p>
+    <div class="container d-flex mt-4 ">
+        <div class="container">
+            <img src="static/img/4.svg">
+            <p class="text-center shadow-sm pop-two mt-4">Сможете создать свой первый бизнес практически с любыми
+                вложениями. </p>
+        </div>
+        <div class="container ">
+            <img src="static/img/5.svg">
+            <p class="text-center shadow-sm pop-two mt-4">Научитесь лидерским качествам для управления персоналом и
+                наемными работниками</p>
+
+        </div>
+        <div class="container ">
+            <img src="static/img/6.svg">
+            <p class="text-center shadow-sm pop-two mt-4">Изучите бизнес-психологию, модели поведения конкурентов,
+                основные принципы введения бизнеса</p>
+        </div>
+    </div>
+
+    <p class="text-center pop-one mt-4 p-3 ">Develop</p>
+    <p class="text-center pop-center mt-4 shadow-sm p-3 mb-5 rounded">Базовые курсы в одном пакете годового обучения,
+        чтобы закрыть все возможные вопросы,
+        которые возникают у вас ,обрести уверенность и существенно разнообразить свое мышление!</p>
+    <div id="tariff-block" class="container d-flex mt-4 mb-5">
+        <div class="vr"></div>
+        <div class="container">
+            <div class="d-grid">
+                <p type="button" class="btn btn-outline-dark btn-lg">Годовое обучение</p>
+            </div>
+            <p class="text-center pop-two mt-4">Единовременная оплата</p>
+            <p class="text-center pop mt-4">35 900 p</p>
+            <p class="text pop-three mt-4">Доступ ко всем материалам курса "Бизнес-Гений"</p>
+            <p class="text pop-three mt-4">Запись мастер-класса "Как начать бизнес с 100000р"</p>
+            <p class="text pop-three mt-4">Доступ к закрытому чату с шефами-кураторами</p>
+            <p class="text pop-three mt-4">Бессрочный доступ к материалам</p>
+            <p class="text pop-three mt-4">Сертификат о прохождении курса (при условии сдачи всех практик)</p>
+            <p class="text pop-three mt-4">Доступ к нашей закрытой библиотеке </p>
+        </div>
+        <div class="vr"></div>
+        <div class="container">
+            <div class="d-grid">
+                <button type="button" class="btn btn-outline-dark btn-lg">Годовое обучение</button>
+            </div>
+            <p class="text-center pop-two mt-4">Оплата в рассрочку на 12 месяцев</p>
+            <p class="text-center pop mt-4">от 2 992 p/mec</p>
+            <p class="text pop-three mt-4">Доступ ко всем материалам курса "Бизнес-Гений"</p>
+            <p class="text pop-three mt-4">Запись мастер-класса "Как начать бизнес с 100000р"</p>
+            <p class="text pop-three mt-4">Доступ к закрытому чату с шефами-кураторами</p>
+            <p class="text pop-three mt-4">Бессрочный доступ к материалам</p>
+            <p class="text pop-three mt-4">Сертификат о прохождении курса (при условии сдачи всех практик)</p>
+            <p class="text pop-three mt-4">Доступ к нашей закрытой библиотеке </p>
+        </div>
+        <div class="vr"></div>
+    </div>
+    <div id="pay-block" class="container pop-down px-3 mt-4 w-50 mb-5">
+        <form action="/mail" method="post">
+            <p class="text-center mt-4 shadow-sm p-3 rounded">Единоразовая оплата</p>
+            <p class="text-center pop-three rounded">Пакет "Бизнес-гений" 35 900 руб.</p>
+            <div class="mb-3">
+                <input type="text" name="full_name" placeholder="Ваше имя и фамилия" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="text" name="email" placeholder="Почта" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="text" name="phone_number" placeholder="Номер телефона" class="form-control">
+            </div>
+
+            <div class="container d-flex mb-3">
+                <button type="submit" class="btn btn-dark btn-sm me-4">Оставить заявку</button>
+                <input type="checkbox" class="form-check-input me-2" id="rememberCheckbox">
+                <label class="form-check-label pop-three text-black " for="rememberCheckbox">Я принимаю согласие на
+                    обработку персональных данных</label>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
